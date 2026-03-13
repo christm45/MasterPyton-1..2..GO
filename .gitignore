@@ -1,0 +1,20 @@
+node_modules/
+dist/
+nul
+
+# Android build artifacts
+android/app/build/
+android/.gradle/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+android/capacitor-android/build/
+android/.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
