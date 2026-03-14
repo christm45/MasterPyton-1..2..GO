@@ -1,5 +1,7 @@
 import React from 'react'
 import { Home, BookOpen, Code2, Brain, BarChart3 } from 'lucide-react'
+import lessons from '../data/lessons'
+import quizzes from '../data/quizzes'
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
@@ -34,8 +36,8 @@ export default function Sidebar({ activeView, setActiveView, progress, isOpen })
 
       <div className="sidebar-stats">
         <div className="stat-mini">
-          <span className="stat-mini-label">Completed</span>
-          <span className="stat-mini-value">{completionAll.completed}/{completionAll.total}</span>
+          <span className="stat-mini-label">Lessons</span>
+          <span className="stat-mini-value">{completionAll.completed}/{lessons.length}</span>
         </div>
         <div className="stat-mini">
           <span className="stat-mini-label">Progress</span>
@@ -43,7 +45,7 @@ export default function Sidebar({ activeView, setActiveView, progress, isOpen })
         </div>
         <div className="stat-mini">
           <span className="stat-mini-label">Quizzes</span>
-          <span className="stat-mini-value">{Object.keys(progress.progress.quizScores).length}</span>
+          <span className="stat-mini-value">{Object.keys(progress.progress.quizScores).length}/{quizzes.length}</span>
         </div>
       </div>
     </aside>

@@ -1,5 +1,7 @@
 import { dataQuizzes } from './dataQuizzes'
 import { libraryQuizzes } from './libraryQuizzes'
+import { beginnerExercisesQuizzes } from './beginnerExercisesQuizzes'
+import { additionalQuizzes } from './additionalQuizzes'
 
 const baseQuizzes = [
   {
@@ -394,6 +396,6 @@ const baseQuizzes = [
   }
 ]
 
-const quizzes = [...baseQuizzes, ...dataQuizzes, ...libraryQuizzes]
+const quizzes = [...baseQuizzes, ...beginnerExercisesQuizzes, ...additionalQuizzes, ...dataQuizzes, ...libraryQuizzes]
 
 export default quizzes

@@ -2,6 +2,10 @@ node_modules/
 dist/
 nul
 
+# Electron build output
+release/
+build/
+
 # Android build artifacts
 android/app/build/
 android/.gradle/

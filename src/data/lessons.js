@@ -1,6 +1,11 @@
 import { dataLessons } from './dataLessons'
 import { libraryLessons } from './libraryLessons'
 import { beginnerChallenges } from './beginnerChallenges'
+import { beginnerExercises } from './beginnerExercises'
+import { additionalLessonsA } from './additionalLessonsA'
+import { additionalLessonsB } from './additionalLessonsB'
+import { conceptLessons } from './conceptLessons'
+import { projectLessons } from './projectLessons'
 
 const baseLessons = [
   // ==================== BEGINNER ====================
@@ -2031,6 +2036,6 @@ colors = frozenset({"red", "green", "blue"})
   }
 ]
 
-const lessons = [...baseLessons, ...beginnerChallenges, ...dataLessons, ...libraryLessons]
+const lessons = [...baseLessons, ...beginnerChallenges, ...beginnerExercises, ...additionalLessonsA, ...conceptLessons, ...projectLessons, ...dataLessons, ...libraryLessons, ...additionalLessonsB]
 
 export default lessons
