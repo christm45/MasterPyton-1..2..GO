@@ -2,8 +2,8 @@ node_modules/
 dist/
 nul
 
-# Electron build output
-release/
+# Electron build output (keep only the portable exe)
+release/win-unpacked/
 build/
 
 # Android build artifacts
