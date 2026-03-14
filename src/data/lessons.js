@@ -6,6 +6,7 @@ import { additionalLessonsA } from './additionalLessonsA'
 import { additionalLessonsB } from './additionalLessonsB'
 import { conceptLessons } from './conceptLessons'
 import { projectLessons } from './projectLessons'
+import { realWorldProjects } from './realWorldProjects'
 
 const baseLessons = [
   // ==================== BEGINNER ====================
@@ -2036,6 +2037,6 @@ colors = frozenset({"red", "green", "blue"})
   }
 ]
 
-const lessons = [...baseLessons, ...beginnerChallenges, ...beginnerExercises, ...additionalLessonsA, ...conceptLessons, ...projectLessons, ...dataLessons, ...libraryLessons, ...additionalLessonsB]
+const lessons = [...baseLessons, ...beginnerChallenges, ...beginnerExercises, ...additionalLessonsA, ...conceptLessons, ...projectLessons, ...realWorldProjects, ...dataLessons, ...libraryLessons, ...additionalLessonsB]
 
 export default lessons
